@@ -1,12 +1,32 @@
-<html>
-<body>
-  
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مشروع دوال واجهة المستخدم</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 20px; }
+    #box { width: 200px; height: 100px; background: lightgray; margin: 20px auto; display: none; }
+    button { margin: 5px; padding: 10px 20px; cursor: pointer; }
+  </style>
+</head>
+<body onload="showWelcomeMessage()">
+
+  <h1>تجربة دوال واجهة المستخدم</h1>
+
+  <!-- حقل إدخال -->
+  <input type="text" id="userInput" placeholder="اكتب نص هنا">
+  <button onclick="changeText()">غيّر النص</button>
+
+  <p id="displayText">النص الافتراضي</p>
+
+  <!-- أزرار أخرى -->
+  <button onclick="changeBackgroundColor()">غيّر لون الخلفية</button>
+  <button onclick="toggleBox()">إظهار/إخفاء الصندوق</button>
+
+  <!-- عنصر لإخفائه أو إظهاره -->
+  <div id="box">أنا صندوق تفاعلي</div>
+
+  <script src="script.js"></script>
 </body>
-  
-
-
-
-
-
-  
 </html>
